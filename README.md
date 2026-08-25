@@ -39,3 +39,9 @@ Tests cover color tables, 4/5/6-band calculations, tolerance, temperature coeffi
 ## License
 
 MIT.
+
+## Live Render Demo
+
+A responsive, synthetic/demo report is available at [https://resistor-vision-artu.onrender.com](https://resistor-vision-artu.onrender.com). The hosted view is read-only and preserves the repository's documented local-first boundaries.
+
+<!-- render-live-url:https://resistor-vision-artu.onrender.com -->
