@@ -1,3 +1,10 @@
+/*
+ * ============================================================
+ * FILE: resistor.test.mjs
+ * PURPOSE: Exercises Resistor Vision's domain behavior, validation, persistence, reporting, and safety boundaries with the Node.js test runner.
+ * ============================================================
+ */
+
 import assert from "node:assert/strict";import test from "node:test";import { COLORS,calculate,formatOhms,nearestE12,reverseLookup } from "../src/model.mjs";import { reportHtml } from "../src/report.mjs";
 test("provides standard color table values",()=>{assert.equal(COLORS.red.digit,2);assert.equal(COLORS.gold.multiplier,-1);assert.equal(COLORS.brown.tolerance,1);assert.equal(COLORS.violet.temp,5)});
 test("calculates four-band resistance and tolerance",()=>{const result=calculate(['yellow','violet','red','gold']);assert.equal(result.value,4700);assert.equal(result.tolerance,5);assert.equal(result.low,4465);assert.equal(result.high,4935)});

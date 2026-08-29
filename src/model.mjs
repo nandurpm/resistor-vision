@@ -1,3 +1,10 @@
+/*
+ * ============================================================
+ * FILE: model.mjs
+ * PURPOSE: Defines Resistor Vision's domain model, validation rules, calculations, and aggregation helpers.
+ * ============================================================
+ */
+
 export const COLORS={black:{digit:0,multiplier:0,hex:"#202124"},brown:{digit:1,multiplier:1,tolerance:1,temp:100,hex:"#795548"},red:{digit:2,multiplier:2,tolerance:2,temp:50,hex:"#d83b35"},orange:{digit:3,multiplier:3,temp:15,hex:"#ed861c"},yellow:{digit:4,multiplier:4,temp:25,hex:"#f6c944"},green:{digit:5,multiplier:5,tolerance:.5,hex:"#318052"},blue:{digit:6,multiplier:6,tolerance:.25,temp:10,hex:"#3c73b8"},violet:{digit:7,multiplier:7,tolerance:.1,temp:5,hex:"#7a4da0"},gray:{digit:8,multiplier:8,tolerance:.05,hex:"#848b92"},white:{digit:9,multiplier:9,hex:"#f4f6f5"},gold:{multiplier:-1,tolerance:5,hex:"#c59a29"},silver:{multiplier:-2,tolerance:10,hex:"#b5bbc0"}};
 export const DIGIT_COLORS=Object.keys(COLORS).filter(color=>COLORS[color].digit!==undefined);
 export const MULTIPLIER_COLORS=Object.keys(COLORS).filter(color=>COLORS[color].multiplier!==undefined);
